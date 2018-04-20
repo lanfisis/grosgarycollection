@@ -39,7 +39,7 @@ update:
 	docker-compose run --rm composer update --ignore-platform-reqs
 
 assets:
-	$(PHP) php bin/console sylius:theme:assets:install --symlink
+	$(PHP) php bin/console sylius:theme:assets:install
 
 #########################
 # CONTAINER ACCESS PART #
