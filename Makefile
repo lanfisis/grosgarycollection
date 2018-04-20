@@ -17,6 +17,9 @@ up:
 	sudo ifconfig en0 alias 10.254.254.254 255.255.255.0
 	docker-compose -f docker-compose.yml up -d --remove-orphans
 
+upprod:
+	docker-compose -f docker-compose-prod.yml up -d --remove-orphans
+
 restart: stop up
 
 stop:
