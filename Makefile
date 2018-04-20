@@ -31,7 +31,7 @@ logs:
 build:
 	docker-compose build
 
-assets:
+yarn:
 	$(NODE) yarn install
 	$(NODE) yarn run gulp
 
