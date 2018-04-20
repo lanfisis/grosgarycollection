@@ -1,0 +1,14 @@
+{
+    "name": "burdz/gros-gary-theme",
+    "authors": [
+        {
+            "name": "David Buros",
+            "email": "david.buros@gmail.com"
+        }
+    ],
+    "extra": {
+        "sylius-theme": {
+            "title": "Gros Gary Collection Theme"
+        }
+    }
+}
