@@ -44,6 +44,12 @@ assets:
 assetssym:
 	$(PHP) php bin/console sylius:theme:assets:install --symlink
 
+cc:
+	bin/console cache:clear
+
+ccprod:
+	bin/console --env=prod --no-debug cache:clear
+
 #########################
 # CONTAINER ACCESS PART #
 #########################
