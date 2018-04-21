@@ -41,6 +41,9 @@ update:
 assets:
 	$(PHP) php bin/console sylius:theme:assets:install
 
+assetssym:
+	$(PHP) php bin/console sylius:theme:assets:install --symlink
+
 #########################
 # CONTAINER ACCESS PART #
 #########################
