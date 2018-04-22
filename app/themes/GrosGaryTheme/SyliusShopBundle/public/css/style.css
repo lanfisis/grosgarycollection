@@ -5657,11 +5657,22 @@ a.next-btn {
 }
 
 /** Home **/
-.slider-active-seven h2 {
+.slider-banner-content h2 {
     font-family: 'ostrich_sansheavy', Arial, sans-serif;
 }
 .slider-active-seven h3 {
     font-family: 'ostrich_sansheavy', Arial, sans-serif;
     color: #cc2d1d;
+    font-size: 25px;
+}
+.slider-banner-content p {
+    font-family: 'ostrich_sansheavy', Arial, sans-serif;
+    background-color: #fff;
+    color: #3f3f3f;
+    display: inline-block;
+    letter-spacing: 0.4px;
+    padding: 22px 35px 19px;
+    text-transform: uppercase;
+    border-radius: 5px;
     font-size: 25px;
 }
