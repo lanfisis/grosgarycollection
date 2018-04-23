@@ -21,6 +21,7 @@
     ],
     "require": {
         "php": "^7.1",
+        "bitbag/cms-plugin": "^1.2",
         "sylius/sylius": "1.1.*"
     },
     "require-dev": {

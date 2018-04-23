@@ -30,6 +30,7 @@ class AppKernel extends Kernel
             new \Sylius\Bundle\AdminApiBundle\SyliusAdminApiBundle(),
 
             new \AppBundle\AppBundle(),
+            new \BitBag\SyliusCmsPlugin\BitBagSyliusCmsPlugin(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test', 'test_cached'], true)) {
