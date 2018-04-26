@@ -1,0 +1,29 @@
+{% extends '@SyliusShop/layout.html.twig' %}
+
+{% block metatags %}
+    {% if page.metaKeywords is not empty %}
+        <meta name="keywords" content="{{ page.metaKeywords }}"/>
+    {% endif %}
+    {% if page.metaDescription is not empty %}
+        <meta name="description" content="{{ page.metaDescription }}"/>
+    {% endif %}
+{% endblock %}
+
+{% block breadcrumb %}
+    <!-- breadcrumb start -->
+    <div class="breadcrumb-area">
+        <div class="container">
+            <div class="breadcrumb-text">
+                <ul>
+                    <li><a href="{{ path('sylius_shop_homepage') }}">{{ 'sylius.ui.home'|trans }}</a> <i class="fa fa-caret-right"></i></li>
+                    <li>{{ page.name }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumb end -->
+{% endblock %}
+
+{% block content %}
+    {{ page.content|raw }}
+{% endblock %}

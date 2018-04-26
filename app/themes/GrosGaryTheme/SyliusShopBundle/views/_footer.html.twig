@@ -1,0 +1,64 @@
+<!-- footer area start -->
+<footer class="footer-area">
+    <div class="black-bg ptb-80 footer-top footer-shop-2">
+        <div class="container">
+            <div class="footer-content text-center">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="{{ asset('bundles/syliusshop/img/logo/gros-gary-collection.png') }}" alt="Gros Gary Collection">
+                    </a>
+                </div>
+                <div class="footer-menu">
+                    <nav>
+                        <ul>
+                            <li>{{ render(path('bitbag_sylius_cms_plugin_shop_page_show_link_by_code', {'code' : 'terms-and-conditions', 'template' : '@BitBagSyliusCmsPlugin/Shop/Page/Show/_link.html.twig'})) }}</li>
+                            <li><a href="{{ path('sylius_shop_contact_request') }}">{{ 'grosgary.contact'|trans }}</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="copyright-social">
+                    <div class="copyright common-footer">
+                        <p>
+                            Copyright ©
+                            <a href="http://www.annaburos.fr/" target="blank">Anna Buros</a>
+                            2018. All right reserved
+                        </p>
+                    </div>
+                    <div class="footer-icon-img common-footer">
+                        <img src="{{ asset('bundles/syliusshop/img/icon-img/1.png') }}" alt="">
+                    </div>
+                    <div class="footer-social common-footer">
+                        <ul>
+                            <li>
+                                <a href="https://www.instagram.com/grosgarycollection/">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/grosgarycollection/">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.pinterest.fr/GrosGaryCollection">
+                                    <i class="fa fa-pinterest"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCOXy6FWtujS0E1IET5tGqzw">
+                                    <i class="fa fa-youtube-play"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:hello@grosgarycollection.com">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer area end -->

@@ -19,7 +19,7 @@ services:
     working_dir: /var/www/html
     environment:
       - XDEBUG_CONFIG="remote_host=10.254.254.254"
-      - PHP_IDE_CONFIG="serverName=local.warnerbros.fr"
+      - PHP_IDE_CONFIG="serverName=grosgary"
     depends_on:
       - mysql
     expose:

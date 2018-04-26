@@ -2859,11 +2859,11 @@ h2.about-section-title {
     background-clip: text;
 }
 h2.about-section-title.about-section-title1 , h2.about-section-title.about-section-title2 {
-    background-image: url(../../assets/img/bg/2.jpg);
+    background-image: url(../img/bg/title.png);
 }
 
 h2.about-section-title.about-section-title3 {
-    background-image: url("../../assets/img/bg/8.jpg");
+    background-image: url("../img/bg/8.jpg");
 }
 h2.about-section-title::before {
     background-color: #222831;
@@ -2874,7 +2874,7 @@ h2.about-section-title::before {
     width: 78px;
 }
 h2.about-section-title.about-section-title1::before {
-    left: 122px;
+    left: 280px;
 }
 h2.about-section-title.about-section-title2::before {
     left: 198px;

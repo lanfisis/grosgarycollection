@@ -1,0 +1,87 @@
+{% extends '@SyliusShop/layout.html.twig' %}
+
+{% form_theme form '@SyliusUi/Form/theme.html.twig' %}
+
+{% block breadcrumb %}
+    <!-- breadcrumb start -->
+    <div class="breadcrumb-area">
+        <div class="container">
+            <div class="breadcrumb-text">
+                <ul>
+                    <li><a href="{{ path('sylius_shop_homepage') }}">{{ 'sylius.ui.home'|trans }}</a> <i class="fa fa-caret-right"></i></li>
+                    <li>{{ 'grosgary.contact'|trans }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumb end -->
+{% endblock %}
+
+{% block content %}
+    <div class="cotact--area pb-100">
+        <div class="container-fluid">
+            <div class="contact-wrapper">
+                <div class="contac-title">
+                    <h3>{{ 'grosgary.contact'|trans }}</h3>
+                </div>
+                <div class="contact-info">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="single-contact-info text-center">
+                                <i class="fa fa-map-marker"></i>
+                                <h3>{{ 'grosgary.our_address'|trans }}</h3>
+                                <p>666 5th Ave New York, NY, United </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="single-contact-info extra-contact-info text-center">
+                                <ul>
+                                    <li><i class="fa fa-phone"></i> 716-298-1822 </li>
+                                    <li><i class="fa fa-envelope-o"></i> <a href="#"> anna.buros@gmail.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="single-contact-info text-center">
+                                <i class="fa fa-envelope-o"></i>
+                                <h3>{{ 'grosgary.opening_hour'|trans }}</h3>
+                                <p>{{ 'grosgary.opening_hour_value'|trans }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contac-title">
+                    <h3>{{ 'grosgary.give_us_email'|trans }}</h3>
+                </div>
+                <div class="contact-message">
+                    <form id="contact-form" action="assets/mail.php" method="post">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="contact-form-style contact-font-one">
+                                    <input name="name" placeholder="Your Name" type="text">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="contact-form-style contact-font-two">
+                                    <input name="email" placeholder="Your Email" type="email">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="contact-form-style contact-font-three">
+                                    <input name="subject" placeholder="Your Title" type="text">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="contact-form-style contact-font-four">
+                                    <textarea name="message" placeholder="Message"></textarea>
+                                    <button class="submit" type="submit"><i class="fa fa-envelope-o"></i> Send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <p class="form-messege"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

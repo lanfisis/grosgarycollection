@@ -29,3 +29,5 @@
 /behat.yml
 /phpunit.xml
 /phpspec.yml
+
+!vendor/bitbag/cms-plugin/src/Resources/views/Shop/Page/show.html.twig

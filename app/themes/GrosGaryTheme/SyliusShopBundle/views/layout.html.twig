@@ -1,0 +1,68 @@
+
+<!doctype html>
+<html class="no-js" lang="{{ app.request.locale|slice(0, 2) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Gros Gary Collection</title>
+
+        {% block metatags %}
+        {% endblock %}
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Favicon icon -->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+        <link rel="stylesheet" href="{{ asset('bundles/syliusshop/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('bundles/syliusshop/css/magnific-popup.css') }}">
+        <link rel="stylesheet" href="{{ asset('bundles/syliusshop/css/owl.carousel.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('bundles/syliusshop/css/font-awesome.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('bundles/syliusshop/css/pe-icon-7-stroke.css') }}">
+        <link rel="stylesheet" href="{{ asset('bundles/syliusshop/css/meanmenu.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('bundles/syliusshop/css/bundle.css') }}">
+        <link rel="stylesheet" href="{{ asset('bundles/syliusshop/css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('bundles/syliusshop/css/responsive.css') }}">
+
+        <script src="{{ asset('bundles/syliusshop/js/vendor/modernizr-2.8.3.min.js') }}"></script>
+
+        {{ sonata_block_render_event('sylius.shop.layout.head') }}
+    </head>
+<body>
+
+{% block header %}
+    {% include '@SyliusShop/_header.html.twig' %}
+{% endblock %}
+
+{% block breadcrumb %}
+{% endblock %}
+
+{% include '@SyliusShop/_flashes.html.twig' %}
+
+{{ sonata_block_render_event('sylius.shop.layout.before_content') }}
+
+{% block content %}
+{% endblock %}
+
+{{ sonata_block_render_event('sylius.shop.layout.after_content') }}
+
+{% block footer %}
+    {% include '@SyliusShop/_footer.html.twig' %}
+{% endblock %}
+
+
+<script src="{{ asset('bundles/syliusshop/js/vendor/jquery-1.12.0.min.js') }}"></script>
+<script src="{{ asset('bundles/syliusshop/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('bundles/syliusshop/js/jquery.magnific-popup.min.js') }}"></script>
+<script src="{{ asset('bundles/syliusshop/js/isotope.pkgd.min.js') }}"></script>
+<script src="{{ asset('bundles/syliusshop/js/imagesloaded.pkgd.min.js') }}"></script>
+<script src="{{ asset('bundles/syliusshop/js/jquery.counterup.min.js') }}"></script>
+<script src="{{ asset('bundles/syliusshop/js/waypoints.min.js') }}"></script>
+<script src="{{ asset('bundles/syliusshop/js/ajax-mail.js') }}"></script>
+<script src="{{ asset('bundles/syliusshop/js/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('bundles/syliusshop/js/plugins.js') }}"></script>
+<script src="{{ asset('bundles/syliusshop/js/main.js') }}"></script>
+</body>
+</html>
+
+
