@@ -2,7 +2,7 @@
     {% for code in locales %}
         {% if code is not same as(active) %}
             <a href="{{ path('sylius_shop_switch_locale', {'code': code}) }}" class="item sylius-available-locale">
-                {{ code|sylius_locale_name }}
+                {{ code }}
             </a>
         {% endif %}
     {% endfor %}
