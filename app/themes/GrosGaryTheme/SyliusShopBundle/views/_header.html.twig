@@ -62,7 +62,7 @@
             <div class="mobile-menu">
                 <nav id="mobile-menu-active">
                     <ul class="menu-overflow">
-                        <li><a href="#">{{ 'grosgary.shop'|trans }}</a></li>
+                        <li><a href="{{ path('sylius_shop_product_index', {'slug': 'shop'}) }}">{{ 'grosgary.shop'|trans }}</a></li>
                         <li>{{ render(path('bitbag_sylius_cms_plugin_shop_page_show_link_by_code', {'code' : 'about', 'template' : '@BitBagSyliusCmsPlugin/Shop/Page/Show/_link.html.twig'})) }}</li>
                         <li><a href="{{ path('sylius_shop_contact_request') }}">{{ 'grosgary.contact'|trans }}</a></li>
                     </ul>
@@ -80,7 +80,7 @@
     </span>
     <nav>
         <ul>
-            <li><a href="#">{{ 'grosgary.shop'|trans }}</a></li>
+            <li><a href="{{ path('sylius_shop_product_index', {'slug': 'shop'}) }}">{{ 'grosgary.shop'|trans }}</a></li>
             <li>{{ render(path('bitbag_sylius_cms_plugin_shop_page_show_link_by_code', {'code' : 'about', 'template' : '@BitBagSyliusCmsPlugin/Shop/Page/Show/_link.html.twig'})) }}</li>
             <li><a href="{{ path('sylius_shop_contact_request') }}">{{ 'grosgary.contact'|trans }}</a></li>
         </ul>

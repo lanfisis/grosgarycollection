@@ -1,0 +1,14 @@
+{% import '@SyliusUi/Macro/messages.html.twig' as messages %}
+{% import '@SyliusUi/Macro/pagination.html.twig' as pagination %}
+
+{{ sonata_block_render_event('sylius.shop.product.index.before_list', {'products': resources.data}) }}
+
+{% if resources.data|length > 0 %}
+    {% for product in resources.data %}
+        <div class="column">
+            {% include '@SyliusShop/Product/_box.html.twig' %}
+        </div>
+    {% endfor %}
+{% else %}
+    {{ messages.info('sylius.ui.no_results_to_display') }}
+{% endif %}

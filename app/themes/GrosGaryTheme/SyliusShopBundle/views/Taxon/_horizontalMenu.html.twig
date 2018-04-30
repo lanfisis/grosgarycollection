@@ -1,0 +1,7 @@
+<div class="portfolio-menu-active mb-50 text-center portfolio-menu-style-2">
+     <button class="active" data-filter="*">All</button>
+    {% for child in taxon.children %}
+        <button data-filter=".{{ child.slug }}">{{ child.name }}</button>
+    {% endfor %}
+</div>
+

@@ -1,0 +1,9 @@
+{% extends '@SyliusShop/layout.html.twig' %}
+
+{% block content %}
+    {{ render(url('sylius_shop_partial_taxon_show_by_slug', {
+        'slug': app.request.attributes.get('slug'),
+        'template': '@SyliusShop/Taxon/_horizontalMenu.html.twig'
+    })) }}
+    {% include '@SyliusShop/Product/Index/_main.html.twig' %}
+{% endblock %}
