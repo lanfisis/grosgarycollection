@@ -1431,8 +1431,11 @@ h2.company-about-dec-title-2::before {
  .logo-shop {
   display: block;
   float: left;
-}   
-.shop-wrapper form#searchbox input {
+}
+.logo-shop img {
+  width: 117px;
+}
+  .shop-wrapper form#searchbox input {
   width: 215px;
 }    
 .shop-wrapper .portfolio-area {

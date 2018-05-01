@@ -5,5 +5,9 @@
         'slug': app.request.attributes.get('slug'),
         'template': '@SyliusShop/Taxon/_horizontalMenu.html.twig'
     })) }}
-    {% include '@SyliusShop/Product/Index/_main.html.twig' %}
+    <div class="portfolio-style">
+        <div class="row grid-2">
+            {% include '@SyliusShop/Product/Index/_main.html.twig' %}
+        </div>
+    </div>
 {% endblock %}

@@ -8,5 +8,6 @@ grosgary:
   our_address: 'MY ADDRESS'
   our_address_value: 'Toulouse, France'
   opening_hour: 'OPENNING HOUR'
+  my_email: 'MY EMAIL'
   opening_hour_value: 'Monday - Friday. 9:00am - 5:00pm'
   give_us_email: 'Give Me An Email'

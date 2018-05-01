@@ -5,9 +5,7 @@
 
 {% if resources.data|length > 0 %}
     {% for product in resources.data %}
-        <div class="column">
-            {% include '@SyliusShop/Product/_box.html.twig' %}
-        </div>
+       {% include '@SyliusShop/Product/_box.html.twig' %}
     {% endfor %}
 {% else %}
     {{ messages.info('sylius.ui.no_results_to_display') }}

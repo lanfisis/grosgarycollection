@@ -1,0 +1,39 @@
+{% import "@SyliusShop/Common/Macro/money.html.twig" as money %}
+
+{{ sonata_block_render_event('sylius.shop.product.index.before_box', {'product': product}) }}
+
+{% if product.mainTaxon is not null %}
+    {% set taxon = product.mainTaxon %}
+{% endif %}
+
+{% set classtype = 'col-md-4' %}
+{% for attribute in product.getAttributesByLocale(configuration.request.locale, configuration.request.defaultLocale, sylius_base_locale)|sort_by('attribute.position') %}
+    {% if attribute.code == 'listing_display' %}
+        {% set classtype = attribute.value %}
+    {% endif %}
+{% endfor %}
+
+<div class="{{ classtype }} col-sm-12 grid-item-2 {{ (taxon) ? taxon.slug : '' }}">
+
+    <div class="portfolio-shop mb-30">
+        <a class="image" href="{{ path('sylius_shop_product_show', {'slug': product.slug, '_locale': product.translation.locale}) }}">
+            {% include '@SyliusShop/Product/_mainImage.html.twig' with {'product': product} %}
+        </a>
+        <div class="shop-action">
+            <div class="shop-action-cart">
+                <a href="#"><i class="fa fa-shopping-basket"></i></a>
+            </div>
+            <div class="shop-action-title text-center">
+                <h3><a href="{{ path('sylius_shop_product_show', {'slug': product.slug, '_locale': product.translation.locale}) }}">{{ product.name }}</a></h3>
+                {% if not product.variants.empty() %}
+                    <span>{{ money.calculatePrice(product|sylius_resolve_variant) }}</span>
+                {% endif %}
+            </div>
+            <div class="shop-action-love">
+                <a href="#"><i class="fa fa-heart"></i></a>
+            </div>
+        </div>
+     </div>
+</div>
+
+{{ sonata_block_render_event('sylius.shop.product.index.after_box', {'product': product}) }}
