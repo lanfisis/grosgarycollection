@@ -68,3 +68,12 @@ fos_rest:
 sylius_theme:
     sources:
         filesystem: ~
+
+liip_imagine:
+    filter_sets:
+        slide_main:
+            filters:
+                thumbnail: { size: [569, 417], mode: inset }
+        slide_mini:
+            filters:
+                thumbnail: { size: [70, 51], mode: inset }

@@ -20,18 +20,18 @@
             {% include '@SyliusShop/Product/_mainImage.html.twig' with {'product': product} %}
         </a>
         <div class="shop-action">
-            <div class="shop-action-cart">
+            {#<div class="shop-action-cart">
                 <a href="#"><i class="fa fa-shopping-basket"></i></a>
-            </div>
+            </div>#}
             <div class="shop-action-title text-center">
                 <h3><a href="{{ path('sylius_shop_product_show', {'slug': product.slug, '_locale': product.translation.locale}) }}">{{ product.name }}</a></h3>
                 {% if not product.variants.empty() %}
                     <span>{{ money.calculatePrice(product|sylius_resolve_variant) }}</span>
                 {% endif %}
             </div>
-            <div class="shop-action-love">
+            {#<div class="shop-action-love">
                 <a href="#"><i class="fa fa-heart"></i></a>
-            </div>
+            </div>#}
         </div>
      </div>
 </div>

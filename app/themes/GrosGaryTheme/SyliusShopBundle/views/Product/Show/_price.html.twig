@@ -1,0 +1,3 @@
+{% import "@SyliusShop/Common/Macro/money.html.twig" as money %}
+
+<h3>{{ money.calculatePrice(product|sylius_resolve_variant) }}</h3>

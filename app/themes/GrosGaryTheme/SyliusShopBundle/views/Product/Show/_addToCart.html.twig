@@ -1,0 +1,60 @@
+{% set product = order_item.variant.product %}
+
+{% form_theme form 'SyliusUiBundle:Form:theme.html.twig' %}
+
+<div class="ui segment" id="sylius-product-selecting-variant">
+    {{ sonata_block_render_event('sylius.shop.product.show.before_add_to_cart', {'product': product, 'order_item': order_item}) }}
+
+    {{ form_start(form, {'action': path('sylius_shop_ajax_cart_add_item', {'productId': product.id}), 'attr': {'id': 'sylius-product-adding-to-cart', 'class': 'ui loadable form', 'novalidate': 'novalidate', 'data-redirect': path(configuration.getRedirectRoute('summary'))}}) }}
+    {{ form_errors(form) }}
+    <div class="ui red label bottom pointing hidden sylius-validation-error" id="sylius-cart-validation-error"></div>
+    {% if not product.simple %}
+        {% if product.variantSelectionMethodChoice %}
+            {% include '@SyliusShop/Product/Show/_variants.html.twig' %}
+        {% else %}
+            {% include '@SyliusShop/Product/Show/_options.html.twig' %}
+        {% endif %}
+    {% endif %}
+    {{ form_row(form.cartItem.quantity) }}
+
+    {{ sonata_block_render_event('sylius.shop.product.show.add_to_cart_form', {'product': product, 'order_item': order_item}) }}
+
+    <button type="submit">{{ 'sylius.ui.add_to_cart'|trans }}</button>
+    
+</div>
+
+{{ form_start(form, {'action': path('sylius_shop_ajax_cart_add_item', {'productId': product.id}), 'attr': {'id': 'sylius-product-adding-to-cart', 'class': 'details-color-size', 'novalidate': 'novalidate', 'data-redirect': path(configuration.getRedirectRoute('summary'))}}) }}
+    <div class="only-color-size">
+        <div class="details-color">
+            <h4>Color :</h4>
+            <div class="color-meta">
+                <ul>
+                    <li class="blue">b</li>
+                    <li class="yellow">y</li>
+                    <li class="black">g</li>
+                </ul>
+            </div>
+            <a href="#">more</a>
+        </div>
+        <div class="details-size">
+            <span>Size : </span>
+            <div class="details-size-select">
+                <form>
+                    <select class="select">
+                        <option value="">s </option>
+                        <option value="">xs</option>
+                        <option value="">lm</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="details-three-btn">
+        <button type="submit">{{ 'sylius.ui.add_to_cart'|trans }}</button>
+        {#<div class="details-compare-wishlist">
+            <a href="#"><i class="fa fa-heart"></i></a>
+            <a href="#"><i class="fa fa-retweet"></i></a>
+        </div>#}
+    </div>
+{{ form_row(form._token) }}
+{{ form_end(form, {'render_rest': false}) }}

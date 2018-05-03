@@ -1,0 +1,21 @@
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="breadcrumb-text">
+            <ul>
+                <li><a href="{{ path('sylius_shop_homepage') }}">{{ 'sylius.ui.home'|trans }}</a> <i class="fa fa-caret-right"></i></li>
+                {% if product.mainTaxon is not null %}
+                    {% set taxon = product.mainTaxon %}
+                    {% set ancestors = taxon.ancestors|reverse %}
+                    {% for ancestor in ancestors %}
+                        {% if not ancestor.isRoot() %}
+                            <li><a href="#">{{ ancestor.name }}</a> <i class="fa fa-caret-right"></i></li>
+                        {% else %}
+                            <li><a href="{{ path('sylius_shop_product_index', {'slug': ancestor.slug, '_locale': ancestor.translation.locale}) }}">{{ ancestor.name }}</a> <i class="fa fa-caret-right"></i></li>
+                        {% endif %}
+                    {% endfor %}
+                    <li>{{ taxon.name }}</li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</div>

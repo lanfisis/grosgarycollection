@@ -3448,7 +3448,8 @@ h3.sidebar-widget {
 .details-size-select {
     margin-left: 5px;
 }
-.details-three-btn > a {
+.details-three-btn > a,
+.details-three-btn > button {
     color: #fff;
     display: inline-block;
     letter-spacing: 0.4px;
@@ -3459,6 +3460,7 @@ h3.sidebar-widget {
     background-color: #3f3f3f;
 }
 .details-three-btn > a:hover,
+.details-three-btn > button:hover,
 .details-color > a:hover {
     background-color: #666;
     color: #fff;
@@ -5683,3 +5685,29 @@ a.next-btn {
     font-size: 12px;
     color: black;
 }
+
+.btn-etsy {
+    -webkit-border-radius: 7;
+    -moz-border-radius: 7;
+    border-radius: 7px;
+    color: #ffffff;
+    font-size: 20px;
+    background: #E46C2C;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .btn-etsy span {
+    font-family: Courier New;
+    font-weight: bold;
+    font-size: 26px;
+  }
+
+  .btn-etsy:hover {
+    color: white;
+    background: #f77f2d;
+    text-decoration: none;
+  }
+

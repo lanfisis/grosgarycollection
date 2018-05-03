@@ -11,3 +11,7 @@ grosgary:
   my_email: 'MON EMAIL'
   opening_hour_value: 'Du Lundi au Vendredi : 9h - 18h'
   give_us_email: 'Envoyez Moi Un Email'
+  availability: 'Disponibilité'
+  in_stock: 'En Stock'
+  out_of_stock: 'Victime de son Succès'
+  share_this: 'Partage cet article'

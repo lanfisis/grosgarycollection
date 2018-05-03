@@ -11,3 +11,7 @@ grosgary:
   my_email: 'MY EMAIL'
   opening_hour_value: 'Monday - Friday. 9:00am - 5:00pm'
   give_us_email: 'Give Me An Email'
+  availability: 'Availability'
+  in_stock: 'In Stock'
+  out_of_stock: 'Out Of Stock'
+  share_this: 'Share this'
