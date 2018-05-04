@@ -3535,7 +3535,7 @@ h3.sidebar-widget {
 .product-tab-details {
     bottom: 38px;
     display: block;
-    position: absolute;
+    margin-top: 10px;
     text-align: center;
     width: 100%;
 }

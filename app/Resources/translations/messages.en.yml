@@ -15,3 +15,5 @@ grosgary:
   in_stock: 'In Stock'
   out_of_stock: 'Out Of Stock'
   share_this: 'Share this'
+  description: 'Description'
+  advice: 'Advice'
