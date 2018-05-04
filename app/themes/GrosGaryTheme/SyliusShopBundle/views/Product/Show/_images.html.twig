@@ -4,7 +4,7 @@
     {% for image in product.imagesByType('slide') %}
             {% set path = image.path is not null ? image.path|imagine_filter('sylius_shop_product_original') : '//placehold.it/200x200' %}
             <div class="tab-pane {{ loop.first ? 'active' : ''}}" id="{{ image.id }}">
-                <img src="{{ path }}" alt="" style="width: 569px"/>
+                <img src="{{ path }}" alt="" style="width: 100%"  data-action="zoom"/>
             </div>
     {% endfor %}
     </div>
