@@ -3350,7 +3350,7 @@ h3.sidebar-widget {
     color: #333333;
     font-size: 30px;
     font-weight: 500;
-    margin: 0;
+    margin-top: 15px;
 }
 .rating {
     margin: 25px 0 23px;
@@ -3361,6 +3361,7 @@ h3.sidebar-widget {
     line-height: 28px;
     margin: 20px 0 0px;
     padding-bottom: 13px;
+    text-align: justify;
 }
 .single-product-details {
     border-bottom: 1px solid #e1e1e1;
@@ -3576,6 +3577,7 @@ h3.sidebar-widget {
 .review-shipping-bottom .tab-content #description > p {
     letter-spacing: 0.4px;
     line-height: 28px;
+    text-align: justify;
 }
 .review-shipping-bottom .tab-content #description > p.description-mrg {
     margin-bottom: 6px;
