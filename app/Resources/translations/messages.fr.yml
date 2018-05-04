@@ -15,5 +15,5 @@ grosgary:
   in_stock: 'En Stock'
   out_of_stock: 'Victime de son Succès'
   share_this: 'Partage cet article'
-  description: 'Description'
+  product_description: 'Description'
   advice: 'Entretien'
