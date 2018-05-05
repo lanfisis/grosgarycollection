@@ -473,7 +473,7 @@ form#searchbox input::-webkit-placeholder {
 /* sidebar menu */
 
 .sidebar-mega-menu {
-    background: #000 none repeat scroll 0 0;
+    background: #fbfbfb none repeat scroll 0 0;
     border-left: 1px solid #fff;
     left: -300px;
     position: fixed;
@@ -513,7 +513,7 @@ form#searchbox input::-webkit-placeholder {
 }
 .sidebar-menu-active.menu-icon-style a {
     font-size: 22px;
-    color: #fff;
+    color: black;
 }
 .sidebar-menu-active.menu-icon-style a:hover {
     color: #cc501d;
@@ -567,7 +567,7 @@ form#searchbox input::-webkit-placeholder {
     padding-bottom: 0px;
 }
 .sidebar-mega-menu ul li a {
-    color: #fff;
+    color: black;
     display: block;
     font-size: 24px;
     letter-spacing: 0.4px;
