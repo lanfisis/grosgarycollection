@@ -2268,8 +2268,9 @@ h2.company-about-dec-title-2::before {
 }
 .company-about-dec > p {
     letter-spacing: 0.4px;
-    line-height: 40px;
+    line-height: 26px;
     margin-bottom: 43px;
+    margin-top: 20px;
 }
 .company-about-dec > a {
     background-color: #333333;
@@ -2848,31 +2849,22 @@ h2.company-about-dec-title-2::before {
 }
 h2.about-section-title {
     color: #000000;
+    font-family: 'Playfair Display', serif;
     font-size: 80px;
     font-weight: bold;
     line-height: 97px;
     margin: 0;
     position: relative;
     text-transform: capitalize;
-    -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
 }
-h2.about-section-title.about-section-title1 , h2.about-section-title.about-section-title2 {
-    background-image: url(../img/bg/title.png);
-}
+
 
 h2.about-section-title.about-section-title3 {
     background-image: url("../img/bg/8.jpg");
 }
-h2.about-section-title::before {
-    background-color: #222831;
-    bottom: 22px;
-    content: "";
-    height: 15px;
-    position: absolute;
-    width: 78px;
-}
+
 h2.about-section-title.about-section-title1::before {
     left: 280px;
 }
@@ -5686,6 +5678,10 @@ a.next-btn {
     border-radius: 5px;
     font-size: 12px;
     color: black;
+}
+
+.slider-banner-content a:hover {
+    color: #cc501d;
 }
 
 .btn-etsy {
