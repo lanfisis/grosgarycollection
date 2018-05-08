@@ -2024,7 +2024,7 @@ form#searchbox input::-webkit-placeholder {
 }
 
 .shop-action-title {
-  width: 80%;
+    width: 100%;
     padding: 37px 10px 34px;
 }
 .portfolio-menu-style-2 > button {
